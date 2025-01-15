@@ -1,0 +1,47 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --tertiary: #f5f5f5;
+    --accent: #00f098;
+    --accent-2: #fe8a04;
+    --primary: #000000;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../assets/fonts/Nunito-ExtraLight.ttf');
+}
+@font-face {
+    font-family: 'Nunito-Black';
+    src: url('../assets/fonts/Nunito-Black.ttf');
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span,
+li,
+select,
+option,
+th,
+td,
+code,
+label,
+input,
+button,
+div{
+    font-family: 'Nunito';
+}
+
+body {
+    background-color: var(--tertiary);
+}
