@@ -19,6 +19,14 @@
     font-family: 'Nunito-Black';
     src: url('../assets/fonts/Nunito-Black.ttf');
 }
+@font-face {
+    font-family: 'Ichiji';
+    src: url('../assets/fonts/Ichiji-Two.otf');
+}
+@font-face {
+    font-family: 'text-3';
+    src: url('../assets/fonts/Nunito-Medium.ttf');
+}
 
 h1,
 h2,
@@ -38,7 +46,7 @@ code,
 label,
 input,
 button,
-div{
+div {
     font-family: 'Nunito';
 }
 

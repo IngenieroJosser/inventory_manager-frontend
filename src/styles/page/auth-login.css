@@ -1,0 +1,104 @@
+.form-login {
+    top: 10%;
+    left: 1%;
+    padding: 2.5em 17em;
+    border-radius: 0px 23px;
+    filter: drop-shadow(10px 7px 19px rgba(0, 0, 0, 0.2));
+    position: static;
+    max-width: 400px;
+    margin: 6% auto;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: slideInUp 0.6s ease-in-out;
+}
+
+.form-login form {
+    margin-top: 2em;
+}
+
+.form-login h2 {
+    width: 23em;
+    font-family: 'Ichiji';
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.form-login span .btn-to-register {
+    color: #000;
+    margin-top: 1em;
+    font-family: 'text-3';
+    transition: all 1s ease;
+}
+
+.form-login span .btn-to-register:hover {
+    font-family: 'Nunito-Black';
+}
+
+.form-login span {
+    margin-bottom: 0.5em;
+    width: 19em;
+    text-align: justify;
+}
+
+.form-login .form-group {
+    width: 100%;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-login form .form-group {
+    margin-top: 1em;
+}
+
+.form-login .form-group label {
+    font-family: 'Ichiji';
+    margin-bottom: 0.5em;
+    font-size: 12px;
+    background-color: var(--accent);
+    padding: 7px 14px;
+    border-radius: 20px;
+}
+
+.form-login .form-group input {
+    width: 21em;
+    padding: 7px 10px;
+    border-radius: 50px;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+}
+
+.form-login .form-group input:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); 
+    outline: none;
+}
+
+.form-login form .btn-submit {
+    background-color: var(--primary);
+    color: #FFF;
+    padding: 5px 23px;
+    border-radius: 50px;
+    border: none;
+    margin-left: 5.8em;
+    transition: all .2s ease-in;
+}
+
+.form-login form .btn-submit:hover {
+    transform: scale(1.1);
+}
+
+/* Animation for the form */
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
