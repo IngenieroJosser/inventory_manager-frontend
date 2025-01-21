@@ -83,8 +83,9 @@
     padding: 5px 23px;
     border-radius: 50px;
     border: none;
-    margin-left: 5.8em;
+    margin-left: .8em;
     transition: all .2s ease-in;
+    width: 260px;
 }
 
 .form-register form .btn-submit:hover {
