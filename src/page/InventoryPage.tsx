@@ -1,6 +1,8 @@
+import '../styles/page/inventory.css'
+
 const InventoryPage = () => {
   return (
-    <div>InventoryPage</div>
+    <div>InventoryPage | Página para la vista del inventario</div>
   )
 }
 
