@@ -1,8 +1,13 @@
 import '../styles/page/inventory.css'
+import HeaderInventory from '../components/inventory/HeaderInventory'
+import MainInventory from '../components/inventory/MainInventory'
 
 const InventoryPage = () => {
   return (
-    <div>InventoryPage | Página para la vista del inventario</div>
+    <>
+      <HeaderInventory />
+      <MainInventory />
+    </>
   )
 }
 

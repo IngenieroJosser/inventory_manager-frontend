@@ -1,0 +1,97 @@
+header {
+    display: flex;
+    position: static;
+    left: 50%;
+    background-color: var(--accent);
+    border-radius: 50px;
+    justify-content: space-between;
+    width: 80%;
+    padding: 16.6px 70px;
+    margin: 1.7em auto;
+    border: 2px solid #00d889;
+}
+
+header input[type="search"] {
+    padding: 6px 16px;
+    border-radius: 10px;
+    border: none;
+    background-color: transparent;
+    box-shadow:  34px 34px 74px #00af6f,
+             -34px -34px 74px #00ffc1;
+    transition: all .1s ease;
+}
+
+header input[type="search"]:focus {
+    border-radius: 10px;
+    background: linear-gradient(145deg, #00ffa3, #00d889);
+    box-shadow:  34px 34px 74px #00af6f,
+             -34px -34px 74px #00ffc1;
+    border: none;
+}
+
+header .profile {
+    display: flex;
+    gap: 1em;
+}
+
+header .profile img {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    border-radius: 50px;
+    transition: all .2s ease-in;
+}
+
+header .profile img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 60px;
+    right: 15px;
+    background-color: rgba(255, 255, 255, .3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 200px;
+    z-index: 1000;
+    overflow: hidden;
+    border-left: 1px solid #00f098;
+}
+
+.dropdown-item {
+    width: 100%;
+    padding: 10px 15px;
+    text-align: left;
+    background: none;
+    border: none;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all 0.1s ease;
+}
+
+.dropdown-item:hover {
+    border-left: 3px solid var(--accent-2);
+    /* font-family: 'Ichiji'; */
+}
+
+.toast-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.toast-container .btn-choose {
+    display: flex;
+    flex-direction: row;
+    margin: 1em auto;
+}
+
+.toast-container span {
+    font-weight: bold;
+}

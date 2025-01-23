@@ -1,0 +1,25 @@
+main {
+    padding: 0 20px;
+}
+
+main .container-order, 
+main .container-product {
+    display: flex;
+    gap: 2em;
+    margin: 5em 2em;
+}
+
+main .container-order .card, 
+main .container-product .card {
+    width: 50%;
+}
+
+main .container-order .card-dataTable, 
+main .container-product .card-dataTable {
+    width: 50%;
+}
+
+main .container-product {
+    display: flex;
+    flex-direction: row-reverse;
+}
