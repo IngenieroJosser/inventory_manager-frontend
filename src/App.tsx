@@ -15,7 +15,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<AuthLogin />} />
         <Route path="/register" element={<AuthRegister />} />
-        <Route path="/inventory" element={<InventoryPage />} />
+        {/* <Route path="/inventory" element={<InventoryPage />} /> */}
         <Route path="*" element={<NotFound />} />
         
         {/* Protegiendo rutas */}

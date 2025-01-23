@@ -1,20 +1,16 @@
-import React from "react";
-import { Navigate } from "react-router-dom";
-import { useAuth } from "./hooks/useAuth";
+import { Navigate } from 'react-router-dom';
 
-interface PrivateRouteProps {
-    element: React.ReactNode;
-}
+const PrivateRoute = ({ element }: { element: JSX.Element }) => {
+  // Comprobamos si hay un token en localStorage (o cualquier otro mecanismo de autenticación)
+  const authToken = localStorage.getItem('authToken');
 
-const PrivateRoute: React.FC<PrivateRouteProps> = ({ element }) => {
-    const { isAuthenticated } = useAuth();
+  if (!authToken) {
+    // Si no hay token, redirige a la página de inicio de sesión
+    return <Navigate to="/" />;
+  }
 
-    if (isAuthenticated === undefined) {
-        // Muestra un cargador mientras verificamos la autenticación
-        return <div>Cargando...</div>;
-    }
-
-    return isAuthenticated ? <>{element}</> : <Navigate to="/" />;
+  // Si el token está presente, mostramos la página solicitada
+  return element;
 };
 
 export default PrivateRoute;

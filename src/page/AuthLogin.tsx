@@ -11,6 +11,7 @@ const AuthLogin = () => {
   const [formData, setFormData] = useState({
     username: '',
     password: '',
+    role: 'operator'
   });
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -32,35 +33,39 @@ const AuthLogin = () => {
 
   const handleLogin = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    const { username, password } = formData;
-
+    const { username, password, role } = formData;
+  
     const apiUrl = import.meta.env.VITE_API_URL_BACKEND;
-
+  
     try {
       const response = await fetch(`${apiUrl}users/login`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ username, password }),
+        body: JSON.stringify({ username, password, role }),
       });
-
+  
       if (!response.ok) {
         const errorData = await response.json();
         showError(errorData.error || 'Credenciales incorrectas.');
         return;
       }
-
+  
       const data = await response.json();
-
+  
       // Guardar token en localStorage o manejar autenticación
       localStorage.setItem('authToken', data.token);
-
+  
       // Redirigir al usuario al dashboard
-      navigate('/inventory');
+      if (formData.role !== 'operator') {
+        navigate('/dashboard');
+      } else {
+        navigate('/inventory');
+      }
     } catch (error: unknown) {
       const errorMessage = error instanceof Error ? error.message : 'Error desconocido';
       showError(`Ocurrió un problema: ${errorMessage}`);
     }
-  };
+  };      
 
   return (
     <div className="form-login">
