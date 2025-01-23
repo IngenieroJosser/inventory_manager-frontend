@@ -95,3 +95,52 @@ header .profile img:hover {
 .toast-container span {
     font-weight: bold;
 }
+
+/* Media queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    header {
+        width: 90%; /* Aumenta el ancho en pantallas pequeñas */
+        padding: 16.6px 20px; /* Reduce el padding */
+    }
+
+    header input[type="search"] {
+        font-size: 14px; /* Reduce el tamaño de la fuente */
+        padding: 6px 10px; /* Ajusta el padding */
+    }
+
+    .dropdown-menu {
+        width: 150px; /* Reduce el ancho del menú en pantallas pequeñas */
+    }
+
+    header .profile {
+        gap: 0.5em; /* Reduce el espacio entre los elementos del perfil */
+    }
+
+    header .profile img {
+        width: 20px;
+        height: 20px; /* Ajusta el tamaño de la imagen */
+    }
+}
+
+/* Media queries para pantallas más pequeñas (móviles) */
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px; /* Ajusta el padding para pantallas muy pequeñas */
+    }
+
+    header input[type="search"] {
+        width: 100%; /* El input de búsqueda ocupa todo el ancho */
+        margin-bottom: 10px; /* Añade espacio debajo del input */
+    }
+
+    .dropdown-menu {
+        top: 50px; /* Ajusta la posición del menú */
+        width: 80%; /* El menú ocupa un mayor ancho */
+    }
+
+    header .profile {
+        justify-content: center; /* Centra los elementos del perfil */
+    }
+}

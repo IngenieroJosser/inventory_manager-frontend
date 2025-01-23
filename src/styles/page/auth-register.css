@@ -103,3 +103,54 @@
         transform: translateY(0);
     }
 }
+
+
+/* Dispositivos grandes (escritorios y pantallas grandes) */
+@media (min-width: 1024px) {
+    .form-register {
+        padding: 2.5em 17em;
+        max-width: 400px;
+    }
+    .form-register h2 {
+        font-size: 2em;
+    }
+    .form-register form .btn-submit {
+        width: 260px;
+    }
+}
+
+/* Dispositivos medianos (tabletas y pantallas medianas) */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .form-register {
+        padding: 2.5em 10em;
+        max-width: 80%;
+    }
+    .form-register h2 {
+        font-size: 1.8em;
+    }
+    .form-register form .btn-submit {
+        width: 100%;
+    }
+}
+
+/* Dispositivos pequeños (móviles) */
+@media (max-width: 767px) {
+    .form-register {
+        padding: 2em 5em;
+        max-width: 90%;
+    }
+    .form-register h2 {
+        font-size: 1.5em;
+    }
+    .form-register span {
+        width: 100%;
+        text-align: center;
+    }
+    .form-register .form-group input {
+        width: 100%;
+    }
+    .form-register form .btn-submit {
+        width: 100%;
+        padding: 10px;
+    }
+}

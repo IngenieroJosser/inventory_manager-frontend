@@ -29,3 +29,51 @@ main .container-product {
     top: calc(50% - 2rem);
     left: 0;
 }
+
+/* Responsive para pantallas medianas */
+@media (max-width: 768px) {
+    main {
+        padding: 0 20px;
+    }
+
+    main .container-order, 
+    main .container-product {
+        flex-direction: column; /* Los contenedores se apilan verticalmente */
+        margin: 3em 0;
+    }
+
+    main .container-order .card, 
+    main .container-product .card {
+        width: 100%; /* Los elementos ocupan todo el ancho disponible */
+    }
+
+    main .container-order .card-dataTable, 
+    main .container-product .card-dataTable {
+        width: 100%;
+        margin-top: 2em; /* Añadimos espacio entre la gráfica y la tabla */
+    }
+}
+
+/* Responsive para pantallas pequeñas (móviles) */
+@media (max-width: 480px) {
+    main {
+        padding: 0 10px;
+    }
+
+    main .container-order, 
+    main .container-product {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    main .container-order .card, 
+    main .container-product .card,
+    main .container-order .card-dataTable,
+    main .container-product .card-dataTable {
+        width: 100%;
+    }
+
+    main .container-product {
+        display: block;
+    }
+}

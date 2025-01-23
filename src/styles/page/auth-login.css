@@ -103,3 +103,64 @@
         transform: translateY(0);
     }
 }
+
+/* Media Queries for responsiveness */
+@media (max-width: 1024px) {
+    .form-login {
+        padding: 2.5em 10em;
+    }
+
+    .form-login h2 {
+        width: 18em;
+    }
+
+    .form-login .form-group input {
+        width: 18em;
+    }
+
+    .form-login form .btn-submit {
+        width: 230px;
+    }
+}
+
+@media (max-width: 768px) {
+    .form-login {
+        padding: 2em 5em;
+    }
+
+    .form-login h2 {
+        width: 15em;
+    }
+
+    .form-login .form-group input {
+        width: 16em;
+    }
+
+    .form-login form .btn-submit {
+        width: 220px;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-login {
+        padding: 1.5em 3em;
+        top: 5%;
+        max-width: 90%;
+    }
+
+    .form-login h2 {
+        width: 14em;
+    }
+
+    .form-login .form-group input {
+        width: 14em;
+    }
+
+    .form-login form .btn-submit {
+        width: 200px;
+    }
+
+    .form-login span {
+        width: 90%;
+    }
+}
