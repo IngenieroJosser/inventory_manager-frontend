@@ -23,3 +23,8 @@ main .container-product {
     display: flex;
     flex-direction: row-reverse;
 }
+
+.speeddial-position {
+    top: calc(50% - 2rem);
+    left: 0;
+}
