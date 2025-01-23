@@ -76,7 +76,7 @@ header .profile img:hover {
 
 .dropdown-item:hover {
     border-left: 3px solid var(--accent-2);
-    /* font-family: 'Ichiji'; */
+    font-weight: bold;
 }
 
 .toast-container {
