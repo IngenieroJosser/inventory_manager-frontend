@@ -168,4 +168,3 @@ const MainInventory: React.FC = () => {
 };
 
 export default MainInventory;
-
