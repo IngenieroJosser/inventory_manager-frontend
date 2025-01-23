@@ -44,7 +44,7 @@ cp .env.example .env
 Abre el archivo `.env` y configura las variables necesarias, como la URL de la API de tu backend:
 
 ```bash
-REACT_APP_API_URL=http://localhost:5000
+VITE_API_URL_BACKEND=http://localhost:3000/api/
 ```
 
 ## Uso
@@ -52,10 +52,10 @@ REACT_APP_API_URL=http://localhost:5000
 Para iniciar el servidor en modo desarrollo:
 
 ```bash
-npm start
+npm run dev
 ```
 
-La aplicación estará disponible en [http://localhost:3000](http://localhost:3000).
+La aplicación estará disponible en [http://localhost:5173](http://localhost:5173).
 
 ## Dependencias
 
@@ -64,7 +64,6 @@ Estas son las dependencias necesarias para el funcionamiento del proyecto:
 - **react**: Librería de JavaScript para construir interfaces de usuario.
 - **react-dom**: Biblioteca que permite a React interactuar con el DOM.
 - **react-router-dom**: Enrutamiento para aplicaciones React.
-- **axios**: Cliente HTTP para hacer solicitudes a la API.
 - **primereact**: Componentes de interfaz de usuario basados en PrimeReact.
 - **typescript**: Para usar TypeScript en el proyecto.
 - **@types/react** y **@types/react-dom**: Tipos de TypeScript para React y ReactDOM.
@@ -72,7 +71,7 @@ Estas son las dependencias necesarias para el funcionamiento del proyecto:
 Para instalar las dependencias:
 
 ```bash
-npm install react react-dom react-router-dom axios primereact
+npm install react react-dom react-router-dom primereact
 npm install --save-dev typescript @types/react @types/react-dom
 ```
 
